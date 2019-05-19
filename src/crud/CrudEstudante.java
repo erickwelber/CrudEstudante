@@ -9,9 +9,7 @@ public class CrudEstudante {
     public CrudEstudante() {
         alunos = new Estudante[TAM];
     }
-
-    //Mandar adicionar um aluno em uma posição vazia, ou seja, vai ter que percorrer
-    //o vetor até achar uma posição vazia.
+    
     public void adicionarEstudante(Estudante adicionar) {
         if (proxPL < alunos.length) {
             if (alunos[proxPL] == null) {
