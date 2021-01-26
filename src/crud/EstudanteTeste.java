@@ -29,7 +29,7 @@ public class EstudanteTeste {
         System.out.println("");
         
         System.out.println("Removeu a estudante Maria: ");
-        ifba.removerEstudante(e1);
+        ifba.removerEstudante(e3);
         ifba.imprimirArquivo();
         System.out.println("");
         

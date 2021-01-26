@@ -24,7 +24,7 @@ public class Estudante {
         this.cpf = cpf;
     }
     
-    @Override
+    /*@Override
     public boolean equals(Object obj) {
         if (obj != null) {
             if (obj instanceof Estudante) {
@@ -36,11 +36,11 @@ public class Estudante {
         }
         return false;
 
-    }
+    }*/
     
-    @Override
+    /*@Override
     public String toString() {
        return "Cpf: " + cpf + " Nome: " + nome;
-    }
+    }*/
     
 }
