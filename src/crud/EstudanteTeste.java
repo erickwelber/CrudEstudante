@@ -3,6 +3,7 @@ package crud;
 public class EstudanteTeste {
     public static void main(String...args) {
         CrudEstudante ifba = new CrudEstudante();
+
         
         Estudante e1 = new Estudante("111","Erick");
         ifba.adicionarEstudante(e1);
