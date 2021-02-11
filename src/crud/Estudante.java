@@ -1,4 +1,5 @@
 package crud;
+
 public class Estudante {
     private String cpf;
     private String nome;
@@ -38,9 +39,9 @@ public class Estudante {
 
     }*/
     
-    /*@Override
+    @Override
     public String toString() {
        return "Cpf: " + cpf + " Nome: " + nome;
-    }*/
-    
+    }
+
 }

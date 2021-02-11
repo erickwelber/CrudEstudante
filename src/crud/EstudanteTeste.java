@@ -14,17 +14,22 @@ public class EstudanteTeste {
         Estudante e3 = new Estudante("333","Maria");
         ifba.adicionarEstudante(e3);
         
-        System.out.println("Lista de Estudantes:");
+        System.out.println("Lista de estudantes adicionados: ");
         ifba.imprimirArquivo();
         System.out.println("");
         
-        System.out.println("Atualizou o nome do estudante Erick para Fabio: ");
-        Estudante eAtualizado = new Estudante("111","Fabio");
-        ifba.atualizarEstudante(eAtualizado);
+        System.out.println("Atualizou o nome do estudante Erick para José: ");
+        
+        //Usado com o método que compara objetos
+        //Estudante atualizar = new Estudante("111","José");
+        //ifba.atualizarEstudante(atualizar);
+        
+        //Usado com o método que compara Strings (NÃO PRECISA USAR OVERRIDE!)
+        ifba.atualizarEstudante("111","José");
         ifba.imprimirArquivo();
         System.out.println("");
         
-        System.out.println("Buscou o estudante de cpf 222:");
+        System.out.println("Buscou o estudante de cpf 222: ");
         Estudante buscar = ifba.buscarEstudante("222");
         System.out.println(buscar);
         System.out.println("");
@@ -33,7 +38,6 @@ public class EstudanteTeste {
         ifba.removerEstudante(e3);
         ifba.imprimirArquivo();
         System.out.println("");
-        
         
     }
     

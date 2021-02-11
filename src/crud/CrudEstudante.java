@@ -27,7 +27,7 @@ public class CrudEstudante {
     }
 
     public void removerEstudante(Estudante remover) {
-        for (int i = 0; i < alunos.length; i++) {
+        for (int i = 0; i < proxPL; i++) {
             if (alunos[i] != null) {
                 if (remover.equals(alunos[i])) {
                     alunos[i] = null;
@@ -37,7 +37,7 @@ public class CrudEstudante {
     }
 
     public Estudante buscarEstudante(String cpf) {
-        for (int i = 0; i < alunos.length; i++) {
+        for (int i = 0; i < proxPL; i++) {
             if (alunos[i] != null) {
                 if (cpf.equals(alunos[i].getCpf())) {
                     return alunos[i];
@@ -46,12 +46,23 @@ public class CrudEstudante {
         }
         return null;
     }
-
-    public void atualizarEstudante(Estudante atualizar) {
-        for (int i = 0; i < alunos.length; i++) {
+    
+    //Método usado com o @Override
+    /*public void atualizarEstudante(Estudante atualizar) {
+        for (int i = 0; i < proxPL; i++) {
             if (alunos[i] != null) {
                 if (atualizar.equals(alunos[i])) {
                     alunos[i] = atualizar;
+                }
+            }
+        }
+    }*/
+    
+    public void atualizarEstudante(String cpf, String nome){
+        for (int i = 0; i < proxPL; i++) {
+            if (alunos[i] != null) {
+                if (cpf.equals(alunos[i].getCpf())) {
+                    alunos[i].setNome(nome);
                 }
             }
         }
