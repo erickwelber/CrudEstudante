@@ -1,6 +1,7 @@
 package crud;
 
 public class Estudante {
+
     private String cpf;
     private String nome;
 
@@ -24,7 +25,7 @@ public class Estudante {
     public void setCpf(String cpf) {
         this.cpf = cpf;
     }
-    
+
     /*@Override
     public boolean equals(Object obj) {
         if (obj != null) {
@@ -38,10 +39,9 @@ public class Estudante {
         return false;
 
     }*/
-    
     @Override
     public String toString() {
-       return "Cpf: " + cpf + " Nome: " + nome;
+        return "Cpf: " + cpf + " Nome: " + nome;
     }
 
 }

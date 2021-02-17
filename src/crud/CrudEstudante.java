@@ -9,7 +9,7 @@ public class CrudEstudante {
     public CrudEstudante() {
         alunos = new Estudante[TAM];
     }
-    
+
     public void adicionarEstudante(Estudante adicionar) {
         if (proxPL < alunos.length) {
             if (alunos[proxPL] == null) {
@@ -46,7 +46,7 @@ public class CrudEstudante {
         }
         return null;
     }
-    
+
     //Método usado com o @Override
     /*public void atualizarEstudante(Estudante atualizar) {
         for (int i = 0; i < proxPL; i++) {
@@ -57,8 +57,7 @@ public class CrudEstudante {
             }
         }
     }*/
-    
-    public void atualizarEstudante(String cpf, String nome){
+    public void atualizarEstudante(String cpf, String nome) {
         for (int i = 0; i < proxPL; i++) {
             if (alunos[i] != null) {
                 if (cpf.equals(alunos[i].getCpf())) {
